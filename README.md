@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Canadian Macro Indicators Lakehouse
 
 An automated, tested lakehouse for Canadian macroeconomic data (Bank of Canada Valet and Statistics Canada) built on Azure Databricks, dbt and Airflow.
@@ -10,3 +11,5 @@ Azure Databricks, Delta Lake, Unity Catalog, dbt, Airflow, GitHub Actions, Power
 
 ## Status
 Week 1: Bronze ingestion (in progress)
+=======
+

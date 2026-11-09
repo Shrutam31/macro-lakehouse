@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Canadian Macro Indicators Lakehouse
 
 An automated, tested lakehouse for Canadian macroeconomic data (Bank of Canada Valet and Statistics Canada) built on Azure Databricks, dbt and Airflow.
@@ -10,6 +10,18 @@ Analysts copy rates, exchange rates, inflation and unemployment figures into spr
 Azure Databricks, Delta Lake, Unity Catalog, dbt, Airflow, GitHub Actions, Power BI
 
 ## Status
-Week 1: Bronze ingestion (in progress)
-=======
+**Week 1 complete: Bronze ingestion**
+- Ingests Bank of Canada (Valet) and Statistics Canada (WDS) data into Delta tables on Databricks
+- Raw responses stored untouched, with a SHA-256 hash of each payload
+- Idempotent loads using Delta MERGE: re-running adds 0 rows
+- Every run logged in `ops.ingestion_log`
+- Series so far: USD/CAD, policy rate, CPI (all-items), unemployment rate
+
+## Notes from the sources
+- Valet returns values as text; Statistics Canada returns numbers
+- Valet's series-details endpoint uses `seriesDetails`; the observations endpoint uses `seriesDetail`
+- Statistics Canada release times suggest batch republishing; revision handling comes in Silver
+
+## Next
+Week 2: Silver and Gold models in dbt, with SCD Type-2 for revised values
 

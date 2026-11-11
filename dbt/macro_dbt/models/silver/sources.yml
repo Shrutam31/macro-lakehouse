@@ -1,0 +1,11 @@
+# telling dbt about your tables
+
+version: 2
+
+sources:   
+  - name: bronze
+    database: macro
+    schema: bronze
+    tables:
+     - name: boc_raw
+     - name: statcan_raw

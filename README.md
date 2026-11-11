@@ -23,5 +23,6 @@ Azure Databricks, Delta Lake, Unity Catalog, dbt, Airflow, GitHub Actions, Power
 - Statistics Canada release times suggest batch republishing; revision handling comes in Silver
 
 ## Next
-Week 2: Silver and Gold models in dbt, with SCD Type-2 for revised values
-
+**Week 2 in progress: Silver models with dbt**
+- `silver_boc_observations`: parsed, typed and deduplicated Bank of Canada data (USD/CAD and policy rate)
+- Statistics Canada Silver model with revision history: next

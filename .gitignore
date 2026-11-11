@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .venv/
 .DS_Store
+dbt/macro_dbt/profiles.yml
+dbt/macro_dbt/target/
+dbt/macro_dbt/logs/

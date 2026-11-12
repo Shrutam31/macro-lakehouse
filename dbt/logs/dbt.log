@@ -175,3 +175,26 @@ Internal Error
 [0m20:13:20.843066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A09D8C80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A0E983B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000285A0C5D7C0>]}
 [0m20:13:20.843066 [debug] [MainThread]: Flushing usage events
 [0m20:13:21.230663 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:28:15.321061 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828C3F9400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828FE22C60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828FE209B0>]}
+
+
+============================== 21:28:15.326371 | efaa4a63-70d8-4f56-aebf-b65b9f63ce9b ==============================
+[0m21:28:15.326371 [info ] [MainThread]: Running with dbt=1.12.6
+[0m21:28:15.326371 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\shrut\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m21:28:15.353141 [info ] [MainThread]: dbt version: 1.12.6
+[0m21:28:15.353141 [info ] [MainThread]: python version: 3.12.9
+[0m21:28:15.353141 [info ] [MainThread]: python path: C:\ShrutFiles\Project_shrut\macro-lakehouse\.venv\Scripts\python.exe
+[0m21:28:15.363312 [info ] [MainThread]: os info: Windows-11-10.0.26300-SP0
+[0m21:28:17.890846 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m21:28:17.890846 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m21:28:17.890846 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m21:28:20.462755 [info ] [MainThread]: Using profiles dir at C:\Users\shrut\.dbt
+[0m21:28:20.462755 [info ] [MainThread]: Using profiles.yml file at C:\Users\shrut\.dbt\profiles.yml
+[0m21:28:20.462755 [info ] [MainThread]: Using dbt_project.yml file at C:\ShrutFiles\Project_shrut\macro-lakehouse\dbt\dbt_project.yml
+[0m21:28:20.462755 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m21:28:20.462755 [debug] [MainThread]: Command `dbt debug` failed at 21:28:20.462755 after 5.32 seconds
+[0m21:28:20.466639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001828FE22A80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C38521B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182C56C4470>]}
+[0m21:28:20.466639 [debug] [MainThread]: Flushing usage events
+[0m21:28:20.900116 [debug] [MainThread]: An error was encountered while trying to flush usage events
